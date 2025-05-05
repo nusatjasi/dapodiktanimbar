@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelas 7 - Dashboard Sekolah</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="theme-color" content="#1a237e" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo Sekolah">
+      <div class="app-title" id="appTitle">APLIKASI DAPODIK 3</div>
+    </div>
+    <div class="divider"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Peserta Didik <span class="arrow">▶</span></a>
+          <ul class="submenu">
+            <li><a href="kelas7.html" class="active">Kelas 7</a></li>
+            <li><a href="#">Kelas 8</a></li>
+            <li><a href="#">Kelas 9</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">GTK <span class="arrow">▶</span></a>
+          <ul class="submenu">
+            <li><a href="tendik.html">Tendik</a></li>
+            <li><a href="guru.html">Guru</a></li>
+          </ul>
+        </li>
+        <li><a href="pesan.html">Pesan</a></li>
+        <li><a href="edit-profil.html">Profil</a></li>
+      </ul>
+    </nav>
+
+    <!-- Logout Button -->
+    <div class="logout">
+      <a href="#" class="logout-btn">
+        <span class="icon">🚪</span> Keluar
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Top Navbar -->
+    <div class="navbar">
+      <!-- Kiri: Info Sekolah -->
+      <div class="school-info" style="text-align: left;">
+        <h3>SMP NEGERI 2 WERTAMRIAN</h3>
+        <p>
+          NPSN: 60102751<br>
+          Operator: ANDREAS B NUSATJASI<br>
+          Aplikasi: APLIKASI DAPODIK 3
+        </p>
+      </div>
+
+      <!-- Kanan: Notifikasi dan Jam -->
+      <div class="navbar-right">
+        <div class="notification-icon">
+          <i class="fas fa-envelope"></i>
+          <span class="notif-indicator" id="notifIndicator"></span>
+        </div>
+        <div class="clock-box">
+          <div class="clock-glow"></div>
+          <div class="digital-clock" id="clock">00:00:00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Halaman Kelas 7 -->
+    <div class="page-content">
+      <h2>Kelas 7</h2>
+      <!-- Konten lain bisa ditambahkan di sini -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Copyright -->
+  <div class="copyright-inline">
+    <p>&copy; 2025 Andreas Blasius Nusatjasi. Semua Hak Cipta Dilindungi.</p>
+  </div>
+
+</body>
+</html>

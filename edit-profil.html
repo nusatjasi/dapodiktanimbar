@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Profil Sekolah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo Sekolah" />
+      <div class="app-title" id="appTitle">APLIKASI DAPODIK 3</div>
+    </div>
+    <div class="divider"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Peserta Didik <span class="arrow">▶</span></a>
+          <ul class="submenu">
+            <li><a href="#">Kelas 7</a></li>
+            <li><a href="#">Kelas 8</a></li>
+            <li><a href="#">Kelas 9</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">GTK <span class="arrow">▶</span></a>
+          <ul class="submenu">
+            <li><a href="tendik.html">Tendik</a></li>
+            <li><a href="guru.html">Guru</a></li>
+          </ul>
+        </li>
+        <li><a href="pesan.html">Pesan</a></li>
+        <li><a href="edit-profil.html" class="active">Profil</a></li>
+      </ul>
+    </nav>
+    <div class="logout">
+      <a href="#" class="logout-btn"><span class="icon">⏻</span> Logout</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="school-info">
+        <h3>Edit Profil Sekolah</h3>
+      </div>
+    </div>
+
+    <!-- Edit Form -->
+    <div class="form-card">
+
+      <!-- Pesan Petunjuk -->
+      <div class="info-message" style="margin-bottom: 1rem; padding: 10px; background-color: #e3f2fd; border-left: 5px solid #2196f3; color: #0d47a1; font-size: 14px;">
+        💡 Silakan klik tombol <strong>Edit</strong> untuk mengedit data profil Anda.
+      </div>
+
+      <form id="profileForm">
+        <div class="form-group">
+          <label for="appName">Nama Aplikasi</label>
+          <input type="text" id="appName" placeholder="Contoh: APLIKASI DAPODIK 3" />
+        </div>
+        <div class="form-group">
+          <label for="schoolName">Nama Sekolah</label>
+          <input type="text" id="schoolName" placeholder="Masukkan nama sekolah" />
+        </div>
+        <div class="form-group">
+          <label for="npsn">NPSN</label>
+          <input type="text" id="npsn" placeholder="Masukkan NPSN" />
+        </div>
+        <div class="form-group">
+          <label for="operatorName">Nama Operator</label>
+          <input type="text" id="operatorName" placeholder="Masukkan nama operator" />
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="editBtn">Edit</button>
+          <button type="submit" id="saveBtn">Simpan</button>
+        </div>
+
+        <!-- Spinner loading -->
+        <div id="loadingSpinner" style="display: none;">
+          <div class="spinner"></div>
+          <p>Sedang update...</p>
+        </div>
+
+        <!-- Notifikasi sukses -->
+        <div id="saveNotification" class="notification success" style="display: none;">
+          ✅ Data berhasil disimpan.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
